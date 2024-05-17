@@ -1,0 +1,11 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    compileOnly libs.lint.api
+}
+
+jar {
+    manifest {
+        attributes("Lint-Registry-v2": "com.example.ldl.Registry")
+    }
+}
